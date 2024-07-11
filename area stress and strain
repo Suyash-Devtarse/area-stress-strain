@@ -1,0 +1,27 @@
+print("to calculate stress press (1)--strain press(2)--press(c) to find the area of circle--press(r) to find the area of rectangle--press(s) to find the area of squar")
+choise=input(" enter your choice ")
+if choise==1:
+    length=float(input("enter the length of beam: "))
+    force=float(input("enter the force by beam at a point: "))
+    b_s=(force/length)
+    print(b_s,"is the bending stress")
+elif choise==2:
+    elaticity=float(input("enter the elaticity of beam: "))
+    stress=float(input("enter the stress exprienced by the beam: "))
+    strain=(stress/elasticity)
+    print(strain,'is the strain')
+elif choise=='c':
+    radius=float(input("enter thge radius of circle: "))
+    area=2*3.14*radius
+    print(area,"is the area of circle")
+elif choise=='r':
+    length=float(input("enter the length of reactangle: "))
+    breath=float(input("enter the length of breath: "))
+    area=(length*breath)
+    print(area,"is the area of reactangle")
+elif choise=='s':
+    side=float(input("enter the side of the square: "))
+    area=(side*side)
+    print(area,"is the area of square")
+else:
+    print("thankyou and get lost")    
